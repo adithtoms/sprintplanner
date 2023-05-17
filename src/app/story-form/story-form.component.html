@@ -1,0 +1,13 @@
+<div  class="w-100 bg-light rounded p-3 ">
+    <h3>Add Story</h3>
+    <form (ngSubmit)="addStory()">
+        <div>
+            <input class="w-50 mx-auto form-control mt-2" placeholder="story title" type="text" id="title" name="title" [(ngModel)]="story.title" required>
+        </div>
+        <div>
+            <input class="w-50 mx-auto form-control mt-2" placeholder="points" type="number" id="points" name="points" [(ngModel)]="story.points" required>
+          </div>
+          <button class="btn btn-primary mt-2" type="submit">Add</button>
+        
+    </form>
+</div>

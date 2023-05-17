@@ -1,0 +1,7 @@
+<h2>Sprint Display</h2>
+<ul>
+  <li *ngFor="let story of sprint">
+    {{ story.title }} - {{ story.points }} points
+  </li>
+</ul>
+<button (click)="generateSprint()">Generate Sprint</button>

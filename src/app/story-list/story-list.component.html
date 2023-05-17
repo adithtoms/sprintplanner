@@ -1,0 +1,9 @@
+<div class="w-100 bg-light rounded p-3 text-center">
+    <h2>Story List</h2>
+    <ul>
+      <li class="border rounded p-4" *ngFor="let story of stories">
+        {{ story.title }} - {{ story.points }} points
+      </li>
+    </ul>
+    <button class="btn btn-danger" (click)="clearStories()">Clear All Stories</button>
+</div>

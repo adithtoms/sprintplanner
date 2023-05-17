@@ -1,0 +1,10 @@
+<div class="w-50 bg-light rounded p-3 text-center">
+  <h2>Set Target Sprint Point</h2>
+  <div class="mb-2 mt-2">
+    <label class="mt-2" for="targetPoints">Target Sprint Points:</label>
+    <input class="form-control mt-2" type="number" id="targetPoints" name="targetPoints" [(ngModel)]="targetSprintPoints" required>
+  </div>
+  <button class="btn btn-secondary me-2" (click)="autoSelectStories()">Auto Select Stories</button>
+  <button class="btn btn-secondary me-2" (click)="clearStories()">Clear All Stories</button>
+  <button class="btn btn-secondary" (click)="clearSelectedStories()">Clear Selected Stories</button>
+</div>
